@@ -14,7 +14,7 @@ if (
         hour = minute * 60,
         day = hour * 24;
 
-    let countDown = new Date("October 31, 2020 15:07:00").getTime(),
+    let countDown = new Date("October 31, 2020 17:29:00").getTime(),
         x = setInterval(function() {
             let now = new Date().getTime(),
                 distance = countDown - now;
@@ -33,7 +33,7 @@ if (
             if (distance < 0) {
                 clearInterval(x);
                 document.querySelector('.contadorCyber').classList.add('oculta');
-                document.querySelector('#ofertaFlash1').classList.add('contadorCyber'); 
+                document.querySelector('#ofertaFlash1').classList.remove('oculta'); 
  
             /* ---------------OFERTA FLASH 1 ------------------- */
 if (
@@ -47,7 +47,7 @@ if (
         hour = minute * 60,
         day = hour * 24;
 
-    let countDown = new Date("October 31, 2020 17:00:00").getTime(),
+    let countDown = new Date("October 31, 2020 17:40:00").getTime(),
         x = setInterval(function() {
             let now = new Date().getTime(),
                 distance = countDown - now;
@@ -65,7 +65,7 @@ if (
                 //do something later when date is reached
             if (distance < 0) {
                 clearInterval(x);
-               document.querySelector('.contadorCyber').classList.add('oculta'); 
+               document.querySelector('#ofertaFlash1').classList.add('oculta'); 
             }
             
         
